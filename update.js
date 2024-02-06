@@ -8,9 +8,9 @@ client= connectedClient;
 })
 .then((res)=>
 {
-  const data={name:"cherry cutie"};
-  var newvalues = {$set: {name:"Pro max"}}
-  const collection = client.db("dip").collection("employee")
+  const data={name:"cherry"};
+  var newvalues = {$set: {name:"Amaan"}}
+  const collection = client.db("dip1").collection("employee")
   return collection.updateOne(data,newvalues)
 })
 .then((result)=>{
